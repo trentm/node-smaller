@@ -1,0 +1,24 @@
+{
+  "name": "@mini/index",
+  "description": "build tooling for '@mini/' scoped npm packages for smaller package",
+  "version": "1.0.0",
+  "author": "Trent Mick <trentm@gmail.com> (http://trentm.com)",
+  "private": true,
+  "homepage": "https://github.com/trentm/node-mini",
+  "keywords": [
+    "mini",
+    "small",
+    "packages"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/trentm/node-mini.git"
+  },
+  "engines": {
+    "node": ">=0.10"
+  },
+  "dependencies": {
+    "json": "9.x"
+  },
+  "license": "MIT"
+}

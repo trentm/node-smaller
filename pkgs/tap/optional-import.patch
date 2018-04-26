@@ -1,0 +1,40 @@
+diff --git a/bin/run.js b/bin/run.js
+index b69adab..0c0334a 100755
+--- a/bin/run.js
++++ b/bin/run.js
+@@ -7,7 +7,10 @@ const spawn = require('child_process').spawn
+ const fg = require('foreground-child')
+ const opener = require('opener')
+ const colorSupport = require('color-support')
+-const nycBin = require.resolve('nyc/bin/nyc.js')
++var nycBin
++try {
++    nycBin = require.resolve('nyc/bin/nyc.js')
++} catch (_) {}
+ const glob = require('glob')
+ const isexe = require('isexe')
+ const osHomedir = require('os-homedir')
+@@ -41,13 +44,16 @@ if (coverageServiceTest)
+ // Currently only Coveralls is supported, but the infrastructure
+ // is left in place in case some noble soul fixes the codecov
+ // module in the future.  See https://github.com/tapjs/node-tap/issues/270
+-const coverageServices = [
+-  {
+-    env: 'COVERALLS_REPO_TOKEN',
+-    bin: require.resolve('coveralls/bin/coveralls.js'),
+-    name: 'Coveralls'
+-  }
+-]
++const coverageServices = []
++try {
++  coverageServices.push(
++    {
++      env: 'COVERALLS_REPO_TOKEN',
++      bin: require.resolve('coveralls/bin/coveralls.js'),
++      name: 'Coveralls'
++    }
++  )
++} catch (_) {}
+ 
+ const main = _ => {
+   const args = process.argv.slice(2)
