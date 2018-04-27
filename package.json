@@ -1,18 +1,17 @@
 {
-  "name": "@mini/index",
-  "description": "build tooling for '@mini/' scoped npm packages for smaller package",
+  "name": "@smaller/index",
+  "description": "build tooling for '@smaller/' scoped npm packages for smaller package",
   "version": "1.0.0",
-  "author": "Trent Mick <trentm@gmail.com> (http://trentm.com)",
+  "author": "Trent Mick",
   "private": true,
-  "homepage": "https://github.com/trentm/node-mini",
+  "homepage": "https://github.com/trentm/node-smaller",
   "keywords": [
-    "mini",
-    "small",
+    "smaller",
     "packages"
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/trentm/node-mini.git"
+    "url": "git://github.com/trentm/node-smaller.git"
   },
   "engines": {
     "node": ">=0.10"
