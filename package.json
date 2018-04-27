@@ -19,5 +19,5 @@
   "dependencies": {
     "json": "9.x"
   },
-  "license": "MIT"
+  "license": "MPL-2.0"
 }
