@@ -1,6 +1,6 @@
 {
   "name": "@smaller/index",
-  "description": "build tooling for '@smaller/' scoped npm packages for smaller package",
+  "description": "tooling to tweak an publish smaller packages to '@smaller/foo'",
   "version": "1.0.0",
   "author": "Trent Mick",
   "private": true,
