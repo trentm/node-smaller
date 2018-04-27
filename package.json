@@ -1,6 +1,6 @@
 {
   "name": "@smaller/index",
-  "description": "tooling to tweak an publish smaller packages to '@smaller/foo'",
+  "description": "tooling to tweak and publish smaller packages to '@smaller/foo'",
   "version": "1.0.0",
   "author": "Trent Mick",
   "private": true,
